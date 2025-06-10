@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick & Morty Explorer</title>
+    <!-- Embedded CSS -->
+    <style>...</style>
+</head>
+<body>
+    <!-- Application Header -->
+    <header>
+        <h1>Rick & Morty Character Explorer</h1>
+    </header>
+    
+    <!-- Main Content Area -->
+    <main>
+        <!-- Search and Filter Controls -->
+        <section class="controls">
+            <!-- Search Input -->
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search characters...">
+            </div>
+            
+            <!-- Filter Dropdowns -->
+            <div class="filters">
+                <select id="status-filter">...</select>
+                <select id="species-filter">...</select>
+            </div>
+        </section>
+        
+        <!-- Character Grid Display -->
+        <section class="character-grid" id="character-grid">
+            <!-- Dynamically populated -->
+        </section>
+        
+        <!-- Pagination Controls -->
+        <section class="pagination">
+            <button id="prev-btn" disabled>Previous</button>
+            <button id="next-btn">Next</button>
+        </section>
+    </main>
+    
+    <!-- Modal for Character Details -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+    
+    <!-- Embedded JavaScript -->
+    <script>...</script>
+</body>
+</html>
