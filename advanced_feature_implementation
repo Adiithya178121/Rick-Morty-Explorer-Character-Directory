@@ -1,0 +1,27 @@
+// Dynamic Filter Population
+function updateSpeciesFilter(characters) {
+    characters.forEach(c => allSpecies.add(c.species));
+    speciesFilter.innerHTML = `
+        <option value="">All Species</option>
+        ${[...allSpecies].sort().map(s => `
+            <option value="${s}">${s}</option>
+        `).join('')}
+    `;
+}
+
+// Pagination Logic
+function updatePagination(info) {
+    prevBtn.disabled = !info.prev;
+    nextBtn.disabled = !info.next;
+    totalPages = Math.ceil(info.count / 20);
+}
+
+// Modal Handling
+function openModal(character) {
+    modalContent.innerHTML = `
+        <h2>${character.name}</h2>
+        <p>Appeared in ${character.episode.length} episodes</p>
+        <!-- Detailed character info -->
+    `;
+    modal.style.display = 'block';
+}
