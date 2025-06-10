@@ -1,0 +1,43 @@
+/* base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* character Card Styles */
+.character-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* status Badges */
+.status.alive {
+    background-color: #55cc44;
+    color: white;
+}
+
+/* veteran Badge */
+.veteran-badge {
+    background-color: #ff9800;
+    color: white;
+}
+
+/* model Animation */
+@keyframes modalopen {
+    from {opacity: 0; transform: translateY(-50px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* responsive Design */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+    }
+    /* ... other responsive rules ... */
+}
